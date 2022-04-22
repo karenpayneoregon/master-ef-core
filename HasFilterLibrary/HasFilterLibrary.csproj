@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<LangVersion>9.0</LangVersion>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="DataScripts\script.sql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="DataScripts\script.sql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ConfigurationLibrary" Version="1.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Classes\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Oed.EntityFrameworkCoreHelpers\Oed.EntityFrameworkCoreHelpers.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+{
+  "CustomerIdentifier": 2,
+  "CompanyName": "Ana Trujillo Emparedados y helados",
+  "ContactId": 2,
+  "Street": null,
+  "City": null,
+  "PostalCode": null,
+  "CountryIdentifier": 12,
+  "Phone": null,
+  "ContactTypeIdentifier": 12,
+  "Country": "Mexico",
+  "FirstName": "Ana",
+  "LastName": "Trujillo",
+  "ContactName": "Ana Trujillo",
+  "ContactTitle": "Owner",
+  "OfficePhoneNumber": "(5) 555-3932",
+  "PhoneTypeIdentifier": 0,
+  "LastChanged": null
+}
