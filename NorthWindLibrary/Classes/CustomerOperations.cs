@@ -70,7 +70,7 @@ namespace NorthWindLibrary.Classes
 
             return (
                 from customer in context.Customers 
-                select customer).FirstOrDefault(x => x.CustomerIdentifier == id);
+                select customer).FirstOrDefault(customerItem => customerItem.CustomerIdentifier == id);
         }
         #endregion
 

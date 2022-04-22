@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using MockingPeopleLibrary.Data;
@@ -58,10 +61,7 @@ namespace MockingPeopleLibrary.Classes
             table.Load(cmd.ExecuteReader());
             return table.AsEnumerable()
                 .All(row => row.Field<int>("NumberOfRows") > 0);
-
-
-
+            
         }
-
     }
 }
