@@ -33,7 +33,8 @@ Two missing, Customers and Categories.
 
 Here only the order and the first detail is read back. Note `Include` performs egar loading of the order.
 
-```csharint orderId = 10248;
+```csharp
+int orderId = 10248;
 using var context = new NorthwindContext();
 
 OrderDetails details = context.OrderDetails
